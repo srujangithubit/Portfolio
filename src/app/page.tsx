@@ -30,7 +30,8 @@ export default function Home() {
           src="/profile.jpg"
           alt="Profile Background"
           fill
-          className="object-cover object-[center_20%] opacity-100"
+          className="object-cover object-[center_20%] opacity-100 contrast-[1.05] saturate-[1.10]"
+          quality={100}
           priority
           sizes="100vw"
         />
