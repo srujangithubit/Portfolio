@@ -1,0 +1,30 @@
+---
+title: "Building AI Systems That Survive Production"
+summary: "Lessons on modularity, evaluation, and operational discipline when shipping AI products."
+date: "2026-01-18"
+readTime: "8 min read"
+tags:
+  - AI Systems
+  - Architecture
+  - Production
+---
+
+## Production starts at the edges
+
+The first failure mode in AI products is rarely the model. It is the coupling between prompts, data access, orchestration, and unsupported assumptions. A production system should be boring at the boundaries and flexible in the middle.
+
+## The architecture I trust
+
+I separate the system into four layers: input normalization, retrieval and reasoning, execution, and evaluation. Each layer has a narrow contract. That makes it easier to test, safer to change, and much easier to replace later.
+
+## What matters operationally
+
+- Deterministic input validation
+- Tracing on every tool call
+- Fallbacks for empty or stale context
+- Offline evaluations before release
+- Human-readable failure states
+
+## The real goal
+
+The best AI products do not feel clever. They feel reliable. The user does not notice the architecture when it is right, but they immediately feel when it is missing.

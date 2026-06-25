@@ -1,0 +1,26 @@
+---
+title: "Designing Trading Platforms for Trust and Speed"
+summary: "How to think about observability, execution flow, and risk controls in financial software."
+date: "2025-11-02"
+readTime: "10 min read"
+tags:
+  - Trading
+  - Systems
+  - Risk
+---
+
+## A trading platform is a control system
+
+Trading products are less about charts and more about feedback loops. Every UI element should make the state of the system legible: exposure, execution quality, and decision confidence.
+
+## Build around risk first
+
+If the system cannot explain risk, it should not be able to trade. Risk checks must run before execution, during execution, and after fills are received.
+
+## Logging beats guessing
+
+Good trading software creates a forensic trail. That means orders, fills, rejections, and user actions are all visible with clear timestamps and shared identifiers.
+
+## Reliable systems feel calm
+
+The highest-quality trading interfaces are quiet, precise, and predictable. Users should spend their attention on decisions, not on deciphering the platform.
