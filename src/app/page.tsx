@@ -32,10 +32,11 @@ export default function Home() {
           fill
           className="object-cover object-[center_20%] opacity-100 contrast-[1.05] saturate-[1.10]"
           quality={100}
+          unoptimized={true}
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-black/10" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_30%,rgba(5,5,5,0.9)_80%,#050505)]" />
         <HeroField />
         <PageShell>
